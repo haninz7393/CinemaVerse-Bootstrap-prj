@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Verse</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="/files/play.png">
+
+</head>
+
+<body class="bg-dark">
+
+    <header>
+
+        <nav class="navbar navbar-expand-sm  bg-warning navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark fw-bold" href="/index.html">
+                    <img src="./files/play.png" alt="" width="50" height="50">
+                    CINEMA VERSE
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark fw-bold" href="/index.html#movies" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Movies
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/index.html#movies">All movies</a></li>
+                                <li><a class="dropdown-item" href="#">VIP movies</a></li>
+                                <li><a class="dropdown-item" href="/index.html#bookticket">book a ticket</a></li>
+                                <li><a class="dropdown-item" href="#">Family</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="/index.html#bookticket">Book a movie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <!--contact us form-->
+        <form class="mx-5" id="contactus">
+            <div class="container w-50 text-light">
+                <p class="h5 my-4">Contact us and will be glad to help you</p>
+
+
+                <div class="row mb-2">
+                    <div class="col-3 ">
+                        <label for="email" class="form-lable">Email:</label>
+                    </div>
+
+                    <div class="col-9">
+                        <input type="email" class="form-control border-3 border-warning shadow-none" placeholder="name@example.com" 
+                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+                    </div>
+                   
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-3">
+                        <label for="fname" class="form-lable" >First name:</label>
+                    </div>
+
+                    <div class="col-9">
+                        <input type="text" class="form-control border-3 border-warning shadow-none"  required>
+                    </div>
+                   
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-3">
+                        <label for="lname" class="form-lable">Last name:</label>
+                    </div>
+
+                    <div class="col-9">
+                        <input type="text" class="form-control border-3 border-warning shadow-none">
+                    </div>
+                   
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-3">
+                        <label for="phone" class="form-lable">Phone number:</label>
+                    </div>
+
+                    <div class="col-9">
+                        <input type="text" class="form-control border-3 border-warning shadow-none" pattern="^(0\W*(?:\d\W*){9})$">
+                    </div>
+                   
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-3">
+                        <label for="message" class="form-lable">Message:</label>
+                    </div>
+
+                    <div class="col-9">
+                        <textarea class="form-control border-3 border-warning shadow-none" placeholder="Leave a message here" style="height: 100px" required></textarea>
+                    </div>
+                   
+                </div>
+
+               
+
+
+                <div class="row mb-2">
+                <button type="submit" class="btn btn-warning my-4">submit</button>
+                </div>
+
+
+            </div>
+
+        </form>
+
+
+
+
+    </main>
+
+    <!--Footer-->
+   
+    
+    <footer class="bd-footer pt-5 bg-light">
+        <div class="container pt-2">
+            <div class="row">
+                <div class="col-lg-3 mb-1">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+                        aria-label="Bootstrap">
+
+
+                        <p class="h3 text-dark fw-bold fs-5" href="#">
+                            <img src="./files/play.png" alt="" width="50" height="50">
+                            CINEMA VERSE
+                        </p>
+                    </a>
+                    <ul class="list-unstyled small">
+
+                        <p class="h5 mb-4">Follow us on social media</p>
+                        <a href="https://instagram.com" class="text-decoration-none mx-2"><img src="./files/instagram.svg"
+                                alt="" width="25" height="25"></a>
+                        <a href="https://facebook.com" class="text-decoration-none mx-2"><img src="./files/facebook.svg" alt=""
+                                width="25" height="25"></a>
+                        <a href="https://youtube.com" class="text-decoration-none mx-2"><img src="./files/youtube.svg" alt=""
+                                width="25" height="25"></a>
+                        
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-1">
+                    <p class="h5">Movies</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="bookticket" class="text-decoration-none">Buy a ticket</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">VIP movies</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">3D movies</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">kids movies</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">action movies</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-1">
+                    <p class="h5">Branches</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="" class="text-decoration-none">Tel-Aviv</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">Haifa</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-1">
+                    <p class="h5">About</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="" class="text-decoration-none">About us</a></li>
+                        <li class="mb-2"><a href="/contactus.html" class="text-decoration-none">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+          
+        </div>
+        <div class="card-footer text-muted text-center text-dark bg-light">
+            &copy Copyright 2022. All Rights Reserved to Sol
+        </div>
+        <div class="position-relative">
+            <a href="#"><img src="./files/up.svg" alt="" class="position-absolute bottom-0 end-0 position-fixed m-3"
+                    style="height:60px;width:60px"> </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

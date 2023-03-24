@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Verse</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/files/play.png">
+</head>
+
+<body class="bg-dark">
+
+    <header>
+
+        <nav class="navbar navbar-expand-sm  bg-warning navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark fw-bold" href="#">
+                    <img src="./files/play.png" alt="" width="50" height="50">
+                    CINEMA VERSE
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark fw-bold" href="#movies" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Movies
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#movies">All movies</a></li>
+                                <li><a class="dropdown-item" href="#">VIP movies</a></li>
+                                <li><a class="dropdown-item" href="#bookticket">book a ticket</a></li>
+                                <li><a class="dropdown-item" href="#">Family</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="#bookticket">Book a movie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="/contactus.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!--Carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!--  <iframe width="100%" height="500px"
+                        src="https://www.youtube.com/embed/X0tOpBuYasI?autoplay=1&controls=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                        -->
+                    <img src="./files/Last Man Down-Banner.jpg" class="d-block w-100 h-50" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./files/2.jpg" class="d-block w-100 h-50" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./files/1.jpg" class="d-block w-100 h-50" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./files/3.jpg" class="d-block w-100 h-50" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!--Movies description-->
+        <p class="h5 text-warning mx-5 mt-5 p-4 border-bottom border-warning border-3">OUR LATEST MOVIES</p>
+
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 mx-5 w-60" id="movies">
+            <div class="col">
+                <div class="card m-3 bg-warning">
+                    <img src="./files/m1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="h5 card-title">Black Adam</p>
+                        <div class="card-text">
+                            <div class="date">
+                                <img src="./files/calendar4-event.svg" alt="">
+                                date: 11.11.2022
+                            </div>
+
+                            <div class="time">
+                                <img src="./files/clock.svg" alt="">
+                                time: 18:45
+                            </div>
+
+                            <div class="length">
+                                <img src="./files/play.svg" alt="">
+                                duration: 105 minutes
+                            </div>
+
+                            <div class="price">
+                                <img src="./files/currency-dollar.svg" alt="">
+                                price: 15$
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-3 bg-warning">
+                    <img src="./files/m2.jpg" class="card-img-top " alt="">
+                    <div class="card-body">
+                        <p class="h5 card-title">Aqua Man</p>
+                        <div class="card-text">
+                            <div class="date">
+                                <img src="./files/calendar4-event.svg" alt="">
+                                date: 13.11.2022
+                            </div>
+
+                            <div class="time">
+                                <img src="./files/clock.svg" alt="">
+                                time: 22:15
+                            </div>
+
+                            <div class="length">
+                                <img src="./files/play.svg" alt="">
+                                duration: 120 minutes
+                            </div>
+
+                            <div class="price">
+                                <img src="./files/currency-dollar.svg" alt="">
+                                price: 15$
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-3 bg-warning">
+                    <img src="./files/m3.jpg" class="card-img-top  " alt="">
+                    <div class="card-body">
+                        <p class="h5 card-title">House of Dragons</p>
+                        <div class="card-text">
+                            <div class="date">
+                                <img src="./files/calendar4-event.svg" alt="">
+                                date: 14.11.2022
+                            </div>
+
+                            <div class="time">
+                                <img src="./files/clock.svg" alt="">
+                                time: 00:45
+                            </div>
+
+                            <div class="length">
+                                <img src="./files/play.svg" alt="">
+                                duration: 98 minutes
+                            </div>
+
+                            <div class="price">
+                                <img src="./files/currency-dollar.svg" alt="">
+                                price: 13$
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-3 bg-warning">
+                    <img src="./files/m8.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="h5 card-title">Dahmer</p>
+                        <div class="card-text">
+                            <div class="date">
+                                <img src="./files/calendar4-event.svg" alt="">
+                                date: 14.11.2022
+                            </div>
+
+                            <div class="time">
+                                <img src="./files/clock.svg" alt="">
+                                time: 19:25
+                            </div>
+
+                            <div class="length">
+                                <img src="./files/play.svg" alt="">
+                                duration: 122 minutes
+                            </div>
+
+                            <div class="price">
+                                <img src="./files/currency-dollar.svg" alt="">
+                                price: 13$
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-3 bg-warning">
+                    <img src="./files/m5.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="h5 card-title">The Peripheral</p>
+                        <div class="card-text">
+                            <div class="date">
+                                <img src="./files/calendar4-event.svg" alt="">
+                                date: 15.11.2022
+                            </div>
+
+                            <div class="time">
+                                <img src="./files/clock.svg" alt="">
+                                time: 14:00
+                            </div>
+
+                            <div class="length">
+                                <img src="./files/play.svg" alt="">
+                                duration: 24 minutes
+                            </div>
+
+                            <div class="price">
+                                <img src="./files/currency-dollar.svg" alt="">
+                                price: 8$
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-3 bg-warning">
+                    <img src="./files/m6.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="h5 card-title">The Boys</p>
+                        <div class="card-text">
+                            <div class="date">
+                                <img src="./files/calendar4-event.svg" alt="">
+                                date: 16.11.2022
+                            </div>
+
+                            <div class="time">
+                                <img src="./files/clock.svg" alt="">
+                                time: 15:40
+                            </div>
+
+                            <div class="length">
+                                <img src="./files/play.svg" alt="">
+                                duration: 42 minutes
+                            </div>
+
+                            <div class="price">
+                                <img src="./files/currency-dollar.svg" alt="">
+                                price: 12$
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-3 bg-warning">
+                    <img src="./files/m4.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="h5 card-title">Western Front</p>
+                        <div class="card-text">
+                            <div class="date">
+                                <img src="./files/calendar4-event.svg" alt="">
+                                date: 18.11.2022
+                            </div>
+
+                            <div class="time">
+                                <img src="./files/clock.svg" alt="">
+                                time: 17:20
+                            </div>
+
+                            <div class="length">
+                                <img src="./files/play.svg" alt="">
+                                duration: 113 minutes
+                            </div>
+
+                            <div class="price">
+                                <img src="./files/currency-dollar.svg" alt="">
+                                price: 16$
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-3 bg-warning">
+                    <img src="./files/m7.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="h5 card-title">1899</p>
+                        <div class="card-text">
+                            <div class="date">
+                                <img src="./files/calendar4-event.svg" alt="">
+                                date: 17.11.2022
+                            </div>
+
+                            <div class="time">
+                                <img src="./files/clock.svg" alt="">
+                                time: 23:30
+                            </div>
+
+                            <div class="length">
+                                <img src="./files/play.svg" alt="">
+                                duration: 124 minutes
+                            </div>
+
+                            <div class="price">
+                                <img src="./files/currency-dollar.svg" alt="">
+                                price: 15$
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Buy a ticket-->
+        <form class="border-warning border-3 border-top mx-5" id="bookticket">
+            <div class="container w-50 text-warning">
+                <p class="h5 my-4">Want to book your ticket?</p>
+
+
+                <div class="row mb-2">
+                    <div class="col-3">
+                        <label for="role" class="form-lable">Movie</label>
+                    </div>
+
+                    <div class="col-9">
+                        <select class="form-select border-3 border-warning shadow-none">
+                            <option value="default" selected>Dahmer</option>
+                            <option value="student">Black Adam</option>
+                            <option value="teacher">Aqua man</option>
+                            <option value="employee">House of Dragons</option>
+                            <option value="employee">The boys</option>
+                            <option value="employee">1899</option>
+                            <option value="employee">Western Front</option>
+                            <option value="employee">The Peripheral</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-3">
+                        <label for="birthdaytime">Date and time:</label>
+                    </div>
+
+                    <div class="col-9">
+                        <input type="datetime-local" id="birthdaytime" name="birthdaytime"
+                            class="rounded p-1 border-warning border-3 " required>
+                    </div>
+
+                </div>
+
+
+                <div class="row mb-2">
+                    <button type="submit" class="btn btn-warning my-4">submit</button>
+                </div>
+
+
+            </div>
+
+        </form>
+
+
+        <!--Map-->
+        <div class="bg-light mt-5">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-7 mt-5">
+
+                        <iframe class="w-100"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3380.783955618534!2d34.77552499140167!3d32.07509164256723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x83680afacf12550a!2sLev%20Cinema!5e0!3m2!1sen!2sil!4v1668121354754!5m2!1sen!2sil"
+                            height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-5 mt-5">
+                        <p class="h4">Contact us</p>
+                        <ul class="list-unstyled">
+                            <li><img src="./files/envelope.svg" alt="" class="mx-1">E-mail: info@cinemaverse.com</li>
+                            <li><img src="./files/telephone.svg" alt="" class="mx-1">Phone: +972-509-6262-89</li>
+                            <li><img src="./files/geo-alt.svg" alt="" class="mx-1">Address: Dizengoff St. 50, Tel
+                                Aviv-Yafo</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--Footer-->
+    <footer class="bd-footer pt-5 bg-light">
+        <div class="container pt-2">
+            <div class="row">
+                <div class="col-lg-3 mb-1">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+                        aria-label="Bootstrap">
+
+
+                        <p class="h3 text-dark fw-bold fs-5" href="#">
+                            <img src="./files/play.png" alt="" width="50" height="50">
+                            CINEMA VERSE
+                        </p>
+                    </a>
+                    <ul class="list-unstyled small">
+
+                        <p class="h5 mb-4">Follow us on social media</p>
+                        <a href="https://instagram.com" class="text-decoration-none mx-2"><img
+                                src="./files/instagram.svg" alt="" width="25" height="25"></a>
+                        <a href="https://facebook.com" class="text-decoration-none mx-2"><img src="./files/facebook.svg"
+                                alt="" width="25" height="25"></a>
+                        <a href="https://youtube.com" class="text-decoration-none mx-2"><img src="./files/youtube.svg"
+                                alt="" width="25" height="25"></a>
+                        <div class="small text-muted mt-4">
+                            Designed and built by Sol
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-1">
+                    <p class="h5">Movies</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#bookticket" class="text-decoration-none">Buy a ticket</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">VIP movies</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">3D movies</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">kids movies</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">action movies</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-1">
+                    <p class="h5">Branches</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="" class="text-decoration-none">Tel-Aviv</a></li>
+                        <li class="mb-2"><a href="" class="text-decoration-none">Haifa</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-1">
+                    <p class="h5">About</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="" class="text-decoration-none">About us</a></li>
+                        <li class="mb-2"><a href="/contactus.html" class="text-decoration-none">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-muted text-center text-dark bg-light">
+            &copy Copyright 2022. All Rights Reserved to Sol
+        </div>
+        <div class="position-relative">
+            <a href="#"><img src="./files/up.svg" alt="" class="position-absolute bottom-0 end-0 position-fixed m-3"
+                    style="height:60px;width:60px"> </a>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
